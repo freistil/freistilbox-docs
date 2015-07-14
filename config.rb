@@ -67,6 +67,9 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # Activate syntax highlighting plugin
+  activate :syntax, :line_numbers => true
 end
 
 # Use redcarpet as Markdown engine
@@ -103,7 +106,7 @@ helpers do
 
     sitemap.resources.each do |resource|
       next if resource.url !~ parent || resource.ext != '.html' || resource == current_resource
-      
+
       articles << {
                    res: resource,
                    weight: resource.data.weight || 100

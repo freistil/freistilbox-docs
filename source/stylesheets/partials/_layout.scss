@@ -5,6 +5,9 @@
 header {
   @include span-columns(12 of 12);
   @include omega();
+
+  margin-bottom: 2em;
+  padding: 1em;
 }
 
 #toprow {
