@@ -1,0 +1,81 @@
+/*
+   freistilbox CSS
+*/
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:100,300,normal,italic,bold,bolditalic);
+@import url(http://fonts.googleapis.com/css?family=Asap:100,300,normal,italic,bold,bolditalic);
+
+$font-stack: 'PT Sans', Helvetica, sans-serif;
+$text-color: #333;
+$freistilbox-color: #238422;
+$link-color: #80A834;
+
+body {
+  margin: 1em 1em 1em 1em;
+}
+
+body {
+  font-family: $font-stack;
+  font-weight: normal;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 2em;
+}
+
+h1 {
+  font-size: 200%;
+  color: $freistilbox-color;
+}
+
+h2 {
+  font-size: 150%;
+  color: $freistilbox-color;
+}
+
+h3 {
+  font-size: 120%;
+}
+
+a {
+  color: $link-color;
+}
+
+img {
+  max-width: 80%;
+}
+
+/* code blocks */
+
+pre {
+    overflow: auto;
+    width: 500px;
+}
+
+/* labels */
+
+.label {
+    padding: 1px 3px 2px;
+    font-size: 9.75px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #bfbfbf;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.label.important {
+    background-color: #c43c35;
+}
+.label.warning {
+    background-color: #f89406;
+}
+.label.success {
+    background-color: #46a546;
+}
+.label.notice {
+    background-color: #62cffc;
+}
