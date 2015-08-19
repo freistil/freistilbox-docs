@@ -19,3 +19,25 @@
     }
   }
 }
+
+#content {
+  ul {
+    @extend %default-ul;
+  }
+  ol {
+    @extend %default-ol;
+  }
+}
+
+code {
+  color: $code-color;
+  background-color: $code-background-color;
+}
+
+pre {
+  background-color: $code-background-color;
+  code {
+    background: none;
+  }
+}
+

@@ -1,12 +1,13 @@
+---
 title: How can I limit access to the website to authorized users?
 status: published
 zendesk-article-id: 201084425
 tags: [ htaccess htpasswd security ]
+---
 
+Sometimes, for example during the pre-launch phase, you want to limit access to your website; unauthorized visitors shouldn't even get presented with a login page. In this article, you'll find a tutorial how to achieve this. We used the following example data:
 
-There are times like, for example, a pre-launch phase, during which you want to limit access to your website; unauthorized visitors shouldn&rsquo;t even get presented with a login page. In this article, you&rsquo;ll find a tutorial how to achieve this. We used the following example data:
-
-*   Website ID: s42
+* Website ID: s42
 
 ## Enable basic HTTP authentication
 
@@ -17,21 +18,19 @@ As a first step, you activate HTTP authentication so a visitor first has to ente
     AuthUserFile /srv/www/freistilbox/clients/c11000/s42/current/docroot/.htpasswd
     Require valid-user
 
-On the line starting with `AuthUserFile`, use your own website&rsquo;s ID instead of &ldquo;s42&rdquo;.
+On the line starting with `AuthUserFile`, use your own website's ID instead of "s42".
 
 ## Generate an encrypted password
 
-Then, you&rsquo;ll have to create a text file named `.htpasswd`, also in the `docroot` directory. This file contains all users allowed to access the website, together with their encrypted passwords.
+Then, you'll have to create a text file named `.htpasswd`, also in the `docroot` directory. This file contains all users allowed to access the website, together with their encrypted passwords.
 
 If you have access to an Apache server installation, you can use its `htpasswd` command to create the file `.htpasswd`:
 
     $ htpasswd -c .htpasswd admin
 
-#### Info
+<span class="label warning">Warning</span> If you want to add users to an existing file, leave off the option `-c` because it would create a new, empty file.
 
-If you want to add other users, leave off the option -c because it would create a new, empty file.
-
-Alternatively, the website [AskApache](http://www.askapache.com/online-tools/htpasswd-generator/) will help you. Just enter a user name and password into the form and choose &ldquo;Generate .htpasswd&rdquo;. You&rsquo;ll find the necessary information in the rectangle titled &ldquo;.htpasswd using all 4 algorithms&rdquo;:
+Alternatively, the website [AskApache](http://www.askapache.com/online-tools/htpasswd-generator/) will help you. Just enter a user name and password into the form and choose "Generate .htpasswd". You'll find the necessary information in the rectangle titled ".htpasswd using all 4 algorithms":
 
     admin:Protected By AskApache:5b8e5bc85154313d6400921a8161c5a4  
     admin:$apr1$lHVjK05m$IfGnV3hA.uPAldtg2PLNk1  
@@ -42,4 +41,4 @@ All lines contain the user name and the password, each encrypted with a differen
 
 ## Deploy your changes
 
-Commit both files, `.htaccess` and `.htpasswd`, to your repository and push it to the freistilbox platform. Your website is now protected from unauthorized looks.
+Commit both files, `.htaccess` and `.htpasswd`, to your repository and push your changes to freistilbox. Your website is now protected from unauthorized looks.

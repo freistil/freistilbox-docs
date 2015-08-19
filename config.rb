@@ -72,5 +72,5 @@ configure :build do
 end
 
 # Use redcarpet as Markdown engine
-#set :markdown_engine, :redcarpet
-#set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blocks: true, with_toc_data: true, smartypants: true
+set :markdown_engine, :redcarpet
