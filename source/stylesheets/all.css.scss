@@ -29,15 +29,3 @@
   }
 }
 
-code {
-  color: $code-color;
-  background-color: $code-background-color;
-}
-
-pre {
-  background-color: $code-background-color;
-  code {
-    background: none;
-  }
-}
-

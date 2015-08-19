@@ -5,16 +5,14 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:100,300,normal,italic,bold,bolditalic);
 @import url(http://fonts.googleapis.com/css?family=Asap:100,300,normal,italic,bold,bolditalic);
 
-$font-stack: 'PT Sans', Helvetica, sans-serif;
-$text-color: #333;
-$forest-green-dark: #238422;
-$link-color: #80A834;
 
-body {
-  font-family: $font-stack;
-  font-weight: normal;
-  color: $text-color;
-}
+// Colors
+$forest-green-dark: #238422;
+$olive-drab: #80A834;
+
+// Font Colors
+$code-color: #000;
+$code-background-color: #eee;
 
 h1 {
   font-size: 200%;
@@ -31,7 +29,7 @@ h3 {
 }
 
 a {
-  color: $link-color;
+  color: $olive-drab;
 }
 
 img {
@@ -40,34 +38,51 @@ img {
 
 /* code blocks */
 
+code {
+  color: $code-color;
+  background-color: $code-background-color;
+}
+
 pre {
-    overflow: auto;
-    width: 500px;
+  overflow: auto;
+  width: 500px;
+  padding: 6px;
+  color: $code-color;
+  background-color: $code-background-color;
+  code {
+    background: none;
+  }
 }
 
 /* labels */
 
 .label {
-    padding: 1px 3px 2px;
-    font-size: 9.75px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-    white-space: nowrap;
-    background-color: #bfbfbf;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+  padding: 1px 3px 2px;
+  font-size: 9.75px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-color: #bfbfbf;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
-.label.important {
-    background-color: #c43c35;
+
+.important {
+  @extend .label;
+  background-color: #c43c35;
 }
-.label.warning {
-    background-color: #f89406;
+.warning {
+  @extend .label;
+  background-color: #f89406;
 }
-.label.success {
-    background-color: #46a546;
+.success {
+  @extend .label;
+  background-color: #46a546;
 }
-.label.notice {
-    background-color: #62cffc;
+.notice {
+  @extend .label;
+  background-color: #62cffc;
 }
+
