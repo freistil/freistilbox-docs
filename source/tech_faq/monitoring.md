@@ -1,7 +1,8 @@
+---
+title: How is freistilbox monitored?
 status: published
 zendesk-article-id: 201489275
-
-# What kind of monitoring do you have in place?
+---
 
 Since it’s important for us to know at any time how well our hosting platform is working, we run several kinds of monitoring systems:
 

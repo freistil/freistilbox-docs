@@ -1,7 +1,9 @@
-title: How do you handle log files?
+---
+title: How does freistilbox handle logs?
 status: published
 zendesk-id: 204338245
 tags: [ log dataprotection ]
+---
 
 ## Website logs
 
@@ -14,4 +16,4 @@ Since we consider website logs a part of your web application, we don't do any p
 
 System logs are log files created by the hosting infrastructure. These log files are necessary for operating the hosting infrastructure and are not available to customers. We keep system logs for a reasonable time, usually about two weeks. 
 
-Protected data such as IP addresses stored in these log files is anonymised within 7 days.
+Data protected by privacy regulations such as IP addresses stored in these log files is anonymised within 7 days.
