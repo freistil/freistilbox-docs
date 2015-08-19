@@ -18,6 +18,7 @@
       <%= partial "partials/header" %>
       <%= partial "partials/sidebar" %>
       <div id="content">
+        <h1><%= current_page.data.title %></h1>
         <%= yield %>
       </div>
       <%= partial "partials/footer" %>
