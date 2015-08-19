@@ -7,12 +7,8 @@
 
 $font-stack: 'PT Sans', Helvetica, sans-serif;
 $text-color: #333;
-$freistilbox-color: #238422;
+$forest-green-dark: #238422;
 $link-color: #80A834;
-
-body {
-  margin: 1em 2em 1em 2em;
-}
 
 body {
   font-family: $font-stack;
@@ -20,18 +16,14 @@ body {
   color: $text-color;
 }
 
-h1, h2, h3, h4, h5 {
-  margin-top: 2em;
-}
-
 h1 {
   font-size: 200%;
-  color: $freistilbox-color;
+  color: $forest-green-dark;
 }
 
 h2 {
   font-size: 150%;
-  color: $freistilbox-color;
+  color: $forest-green-dark;
 }
 
 h3 {

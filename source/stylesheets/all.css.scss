@@ -4,3 +4,18 @@
 @import "neat";
 
 @import "freistilbox";
+
+@import "partials/layout";
+@import "partials/header";
+@import "partials/footer";
+
+#sidebar {
+  nav {
+    ul {
+      display: inline;
+      font-size: 0.8em;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}

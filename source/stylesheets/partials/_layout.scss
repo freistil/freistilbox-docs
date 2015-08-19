@@ -1,0 +1,24 @@
+#container {
+  @include outer-container;
+}
+
+header {
+  @include span-columns(12 of 12);
+  @include omega();
+}
+
+#sidebar {
+  @include span-columns(3 of 12);
+
+}
+
+#content {
+  @include span-columns(9 of 12);
+  @include omega();
+}
+
+footer {
+  @include span-columns(12 of 12);
+  @include omega();
+}
+
