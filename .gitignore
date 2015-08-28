@@ -20,3 +20,6 @@
 # Ignore temporary files
 /tmp
 
+# Ignore S3 credentials file
+.s3_sync
+

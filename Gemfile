@@ -21,6 +21,9 @@ gem 'bitters'
 gem 'bourbon'
 gem 'neat'
 
+# Sync to S3
+gem 'middleman-s3_sync'
+
 group :development do
   # Live-reloading plugin
   gem "middleman-livereload", "~> 3.1.0"
