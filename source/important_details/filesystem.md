@@ -1,7 +1,8 @@
+---
+title: Filesystem structure
 status: published
-zendesk-article-id: 201084625
-
-# Filesystem structure
+zendesk-id: 201084625
+---
 
 ## Limited write permissions
 

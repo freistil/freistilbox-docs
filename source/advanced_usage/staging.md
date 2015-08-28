@@ -1,4 +1,6 @@
+---
 title: Doing multi-stage testing
+---
 
 Modern application development goes through different stages: First, changes to an application are tested during development, usually locally on the developer's work station. Before they are uploaded to the production website though, they often undergo User Acceptance Testing on a staging website. In order to be able to test with production conditions, the staging website usually also sits on the hosting platform.
 

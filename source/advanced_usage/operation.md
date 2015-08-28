@@ -1,7 +1,7 @@
+---
+title: Requirements for optimal website operation
 status: draft
-
-# Requirements for optimal website operation
-
+---
 
 ## Application optimization
 

@@ -1,9 +1,10 @@
+---
+title: Pre-configured settings snippets
 status: published
-zendesk-article-id: 201084635
-zendesk-article-tags:
+zendesk-id: 201084635
+tags:
   - configuration
-
-# Pre-configured settings snippets
+---
 
 In the `current` directory, you'll find a subdirectory named `config` with CMS-specific configuration snippets. You can include these snippets into your web application settings to have important services configured automatically.
 

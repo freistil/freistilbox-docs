@@ -1,7 +1,8 @@
+---
+title: Technical support
 status: published
-zendesk-article-id: 201084645
-
-# Technical support
+zendesk-id: 201084645
+---
 
 Our Help Center team is there to help you with any question or problem you encounter while using freistilbox.
 

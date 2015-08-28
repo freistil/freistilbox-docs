@@ -1,7 +1,8 @@
+---
+title: Distributed Architecture
 status: published
-zendesk-article-id: 201084655
-
-# Distributed Architecture
+zendesk-id: 201084655
+---
 
 freistilbox is much more than a single hosted server. It consists ofa multitude of services running on different servers but integrated into a complete hosting platform. Built-in redundancy on many levels allows you to scale the performance and optimize the availability of your web application as you need. The complexity that comes with such a powerful infrastructure is hidden as we take care of everything.
 

@@ -1,7 +1,8 @@
+---
+title: How you can optimise caching efficiency
 status: published
 zendesk-id: 37747137
-
-# How you can optimise caching efficiency
+---
 
 **Caching is the key to optimum website performance. This article describes how you can make sure that your website uses the freistilbox cache servers as efficient as possible.**
 

@@ -1,7 +1,7 @@
 ---
 title: Where can I see the current status of freistilbox?
 status: published
-zendesk-article-id: 201084685
+zendesk-id: 201084685
 ---
 
 You can see the current status of our hosting platform on our status page:

@@ -2,7 +2,9 @@
 title: How does freistilbox handle logs?
 status: published
 zendesk-id: 204338245
-tags: [ log dataprotection ]
+tags:
+  - log
+  - dataprotection
 ---
 
 ## Website logs

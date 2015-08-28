@@ -1,8 +1,11 @@
 ---
 title: How can I limit access to the website to authorized users?
 status: published
-zendesk-article-id: 201084425
-tags: [ htaccess htpasswd security ]
+zendesk-id: 201084425
+tags:
+  - htaccess
+  - htpasswd
+  - security
 ---
 
 Sometimes, for example during the pre-launch phase, you want to limit access to your website; unauthorized visitors shouldn't even get presented with a login page. In this article, you'll find a tutorial how to achieve this. We used the following example data:

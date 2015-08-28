@@ -1,9 +1,8 @@
 ---
+title: How can I force a cache refresh?
 status: published
-zendesk-article-id: 28632626
+zendesk-id: 28632626
 ---
-
-# How can I force a cache refresh?
 
 The Varnish proxy cache stores data allowed for caching according to the HTTP headers that your website delivers. After the cache lifetime of a specific content object has expired, Varnish removes it from its cache and requests an update from the backend web servers.
 

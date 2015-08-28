@@ -1,9 +1,10 @@
+---
+title: Central deployment
 status: published
-zendesk-article-id: 201084665
-zendesk-article-tags:
+zendesk-id: 201084665
+tags:
   - deployment
-
-# Central deployment
+---
 
 Distributing your web application code on the multiple nodes of a freistilbox cluster will work only if it is installed completely identical on all cluster nodes at all times. Inconsistencies, for example in the form of different code revisions, will result in website behaviour that would at least confuse your visitors or, in the worst case, break your website. 
 

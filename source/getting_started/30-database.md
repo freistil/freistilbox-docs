@@ -1,11 +1,12 @@
+---
+title: Accessing the database
 status: published
-zendesk-article-id: 201084715
-zendesk-article-tags:
+zendesk-id: 201084715
+tags:
   - database
   - mysql
   - configuration
-
-# Accessing the database
+---
 
 Each freistilbox site instance has its own database(s). In order to make configuring database access as easy as possible, freistilbox provides you with pre-populated [configuration snippets][2] that you can simply include in your application configuration. That way, you don't need to configure the database credentials manually and changes are applied automatically.
 

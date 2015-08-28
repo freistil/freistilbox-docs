@@ -2,7 +2,9 @@
 title: Why is the server time running ahead/behind of my own?
 status: published
 zendesk-id: 201084445
-tags: [ time log ]
+tags:
+  - time
+  - log
 ---
 
 There might be a difference between your local time and the clock on our servers. This is not a problem.

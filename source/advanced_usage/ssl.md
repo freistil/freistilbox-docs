@@ -1,7 +1,8 @@
+---
+title: SSL encryption
 status: published
-zendesk-article-id: 201084605
-
-# SSL encryption
+zendesk-id: 201084605
+---
 
 We decrypt incoming SSL requests at the edge of our hosting infrastructure. From there on, we only need to process plain HTTP requests. This practice is called "SSL offloading" and has several advantages:
 

@@ -1,11 +1,10 @@
 ---
+title: Creating and using a new site instance
 status: published
-zendesk-article-id: 201184339
-zendesk-article-tags:
+zendesk-id: 201184339
+tags:
   - ssh
 ---
-
-# Creating and using a new site instance
 
 You can run as many web applications on your freistilbox cluster as you like. For each website, you get a separate site instance that has its own code, domain name(s), database(s), asset files and so on.
 

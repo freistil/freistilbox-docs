@@ -1,7 +1,8 @@
+---
+title: Ready-made Drupal Configuration
 status: published
-zendesk-article-id: 201084595
-
-# Ready-made Drupal Configuration
+zendesk-id: 201084595
+---
 
 ## Configuring the website
 

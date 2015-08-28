@@ -1,8 +1,8 @@
+---
 title: Domains and DNS
 status: published
-zendesk-article-id: 205414355
-
-## Domain names
+zendesk-id: 205414355
+---
 
 Each of your websites can have as many domain names as necessary. You can choose between several types of domains that behave differently:
 
