@@ -6,5 +6,5 @@ Welcome to freistilbox, the leading Enterprise Hosting Platform for Drupal and W
 
 And if you've got any questions that you don't find answered here, just [contact our technical support](mailto:support@freistilbox.com) and we'll get it sorted out!
 
-If you're new to freistilbox, get started with our [tutorial](getting-started/index.html).
+If you're new to freistilbox, get started with our [tutorial](/getting_started/index.html).
 
