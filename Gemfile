@@ -26,5 +26,5 @@ gem 'middleman-s3_sync'
 
 group :development do
   # Live-reloading plugin
-  gem "middleman-livereload", "~> 3.1.0"
+  gem "middleman-livereload", "~> 3.3.0"
 end

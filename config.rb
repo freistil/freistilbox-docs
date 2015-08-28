@@ -90,3 +90,15 @@ activate :s3_sync do |s3_sync|
   s3_sync.prefix                     = ''
   s3_sync.version_bucket             = false
 end
+
+helpers do
+  def section_list(section)
+    output = ""
+    parent = Regexp.new "#{section}"
+    sitemap.resources.each do |resource|
+      next if resource.url !~ parent || resource.ext != '.html' || resource == current_resource
+      output << "<li><a href=\"#{resource.url}\">#{resource.data.title}</a></li>"
+    end
+    output
+  end
+end
