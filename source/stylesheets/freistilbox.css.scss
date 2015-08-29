@@ -14,9 +14,14 @@ $olive-drab: #80A834;
 $code-color: #000;
 $code-background-color: #eee;
 
+h2, h3, h4, h5 {
+  margin: 1em 0 0.5em 0;
+}
+
 h1 {
   font-size: 200%;
   color: $forest-green-dark;
+  border-bottom: 2px solid $forest-green-dark;
 }
 
 h2 {

@@ -1,6 +1,6 @@
 <% related = related_pages(current_page.data.tags) %>
 <% unless related.empty? %>
-  <div class="related">
+  <div id="related">
     <strong>Related articles:</strong>
     <ul>
     <% related.each do |r| %>
