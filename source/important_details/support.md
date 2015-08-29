@@ -1,24 +1,9 @@
 ---
 title: Technical support
-status: published
 zendesk-id: 201084645
 ---
 
 Our Help Center team is there to help you with any question or problem you encounter while using freistilbox.
-
-
-## Support levels
-
-We offer two support levels, Standard Support and Premium Support. Standard Support is available "12x5", weekdays from 06:00 to 18:00 (UTC).
-
-With a Premium Support contract, you can reach our on-call support "24x7" — around the clock on any day. (Due to our limited on-call capacity, support outside the 12x5 timeframe applies exclusively to production emergencies.) Premium Support comes with even more advantages, and you can find all the details on the [freistilbox website](http://www.freistilbox.com/support-levels/).
-
-
-### Upgrading to Premium Support
-
-You can upgrade from Standard Support to Premium Support at any time. We will invoice you for the monthly Premium Support fee starting from the month of your upgrade.
-
-An upgrade is even possible when you're issuing a new support request. For example, let's assume that your freistilbox cluster has Standard Support and you encounter a critical problem during the weekend. If you decide to take advantage of our Premium Support and have our engineers start working immediately on this issue, simply say so in your support request.
 
 
 ## Support channels
