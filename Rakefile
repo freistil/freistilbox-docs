@@ -12,7 +12,7 @@ task :preview do
 end
 
 desc "Deploy website to S3"
-task :deploy do
+task :deploy => :build do
   sh "bundle exec middleman s3_sync"
 end
 
