@@ -1,6 +1,9 @@
 ---
 title: Deploying your web application
 status: draft
+tags:
+  - deployment
+  - git
 ---
 
 To deploy your Drupal installation to our freistilbox hosting platform, you transfer all the changes you've made to the repository to the central repository. You do this by using a simple command:

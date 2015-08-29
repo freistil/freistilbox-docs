@@ -11,7 +11,7 @@ tags:
 
 Website logs are logs files created by your websites, especially access and error logs. These logs are stored on the respective website's shared storage. We keep website logs uncompressed for the current month and compressed for another month. Older logs are deleted.
 
-Since we consider website logs a part of your web application, we don't do any processing on them. If you are required to limit the storage of protected data (such as IP addresses), it is your responsibility to put appropriate measures in place to anonymise this data and/or to delete log files within the stipulated time frame. If you need assistance in implementing these measures, please contact our [support team](https://freistil.zendesk.com/hc/en-us/articles/201084645 "Technical support for freistilbox").
+Since we consider website logs a part of your web application, we don't do any processing on them. If you are required to limit the storage of protected data (such as IP addresses), it is your responsibility to put appropriate measures in place to anonymise this data and/or to delete log files within the stipulated time frame. If you need assistance in implementing these measures, please contact our [support team](/important_details/support.html).
 
 
 ## System logs

@@ -2,6 +2,8 @@
 title: Checking out the site repository
 status: published
 zendesk-id: 201084725
+tags:
+  - git
 ---
 
 Since most freistilbox clusters consist of several application boxes, we have to make sure that each update to your web application will be deployed reliably to all of these boxes. That's why we chose a central Git repository as the source for application deployment.
