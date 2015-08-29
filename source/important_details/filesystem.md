@@ -2,6 +2,10 @@
 title: Filesystem structure
 status: published
 zendesk-id: 201084625
+tags:
+  - boxfile
+  - filesystem
+  - storage
 ---
 
 ## Limited write permissions
