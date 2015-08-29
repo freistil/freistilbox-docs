@@ -18,17 +18,12 @@
       <%= partial "partials/header" %>
       <%= partial "partials/sidebar" %>
       <div id="content">
+        <%= partial "partials/breadcrumbs" %>
         <h1><%= current_page.data.title %></h1>
+
         <%= yield %>
-        <% related = tag_pages(current_page.data.tags) %>
-        <% unless related.empty? %>
-          <div class="related">
-            <strong>Related articles:</strong>
-            <% related.each do |r| %>
-              <li><%= link_to r.data.title, r.url %></li>
-            <% end %>
-          </div>
-        <% end %>
+
+        <%= partial "partials/related" %>
       </div>
       <%= partial "partials/footer" %>
     </div>

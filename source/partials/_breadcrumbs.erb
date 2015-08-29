@@ -1,0 +1,16 @@
+<div id="breadcrumbs">
+<% if current_page.parent %>
+  <%
+    parent = current_page.parent
+    ancestors = []
+    while parent do
+      title = (parent.parent) ? parent.data.title : "Home" 
+      ancestors << { title: title, url: parent.url }
+      parent = parent.parent
+    end
+  %>
+  <% ancestors.reverse.each do |page| %>
+    <%= link_to page[:title], page[:url] %> »
+  <% end %>
+<% end %>
+</div>

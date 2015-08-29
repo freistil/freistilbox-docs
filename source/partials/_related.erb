@@ -1,0 +1,9 @@
+<% related = tag_pages(current_page.data.tags) %>
+<% unless related.empty? %>
+  <div class="related">
+    <strong>Related articles:</strong>
+    <% related.each do |r| %>
+      <li><%= link_to r.data.title, r.url %></li>
+    <% end %>
+  </div>
+<% end %>
