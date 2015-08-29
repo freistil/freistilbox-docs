@@ -101,4 +101,20 @@ helpers do
     end
     output
   end
+
+  def tag_pages(tags)
+    return [] if tags.nil?
+
+    pages = []
+    sitemap.resources.each do |resource|
+      tags.each do |tag|
+        if !resource.data.tags.nil? && resource.data.tags.include?(tag)
+          unless resource.path == current_resource.path
+            pages |= [resource]
+          end
+        end
+      end
+    end
+    pages
+  end
 end
