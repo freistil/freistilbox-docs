@@ -22,13 +22,13 @@ version: 2.0
 shared_folders:
   - docroot/sites/default/files
 env_specific_files:
-  .htaccess:
+  docroot/.htaccess:
     production: .htaccess.production
     test: .htaccess.test
-  .htpasswd:
+  docroot/.htpasswd:
     production: .htpasswd.production
     test: .htpasswd.test
-  sites/default/settings.php:
+  docroot/sites/default/settings.php:
     production: settings.production.php
     test: settings.test.php
 ```
@@ -40,9 +40,11 @@ Shared folders are part of the application code space but need to be shared betw
 
 Public shared folders are defined in a collection named `shared_folders` as a list of paths relative to the Git repository root:
 
-    shared_folders:
-      - docroot/sites/default/files
-      - docroot/sites/www.example.com/files
+```yaml
+shared_folders:
+  - docroot/sites/default/files
+  - docroot/sites/www.example.com/files
+```
 
 
 ## Environment-specific files
@@ -51,16 +53,19 @@ Environment-specific files are configuration files contained in the repository t
 
 In the following example, our deployment will create a symbolic link named `.htaccess` and has it point either to `.htaccess.production` or `.htaccess.test`, depending on which website instance the repository is deployed. The same happens for `.htpasswd` and `sites/default/settings.php`.
 
-    env_specific_files:
-      docroot/.htaccess:
-        production: .htaccess.production
-        test: .htaccess.test
-      docroot/.htpasswd:
-        production: .htpasswd.production
-        test: .htpasswd.test
-      docroot/sites/default/settings.php:
-        production: settings.production.php
-        test: settings.test.php
+```yaml
+env_specific_files:
+  docroot/.htaccess:
+    production: .htaccess.production
+    test: .htaccess.test
+  docroot/.htpasswd:
+    production: .htpasswd.production
+    test: .htpasswd.test
+  docroot/sites/default/settings.php:
+    production: settings.production.php
+    test: settings.test.php
+```
+
 
 ## Upgrading from older Boxfile versions
 
