@@ -102,19 +102,14 @@ helpers do
     output
   end
 
-  def tag_pages(tags)
+  def related_pages(tags)
     return [] if tags.nil?
 
     pages = []
-    sitemap.resources.each do |resource|
-      tags.each do |tag|
-        if !resource.data.tags.nil? && resource.data.tags.include?(tag)
-          unless resource.path == current_resource.path
-            pages |= [resource]
-          end
-        end
-      end
+    tags.each do |tag|
+      pages |= sitemap.where(:tags.include => tag).all
     end
-    pages
+
+    pages - [current_page]
   end
 end
