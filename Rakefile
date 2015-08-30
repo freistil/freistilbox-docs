@@ -16,6 +16,8 @@ task :deploy => :build do
   sh "bundle exec middleman s3_sync"
 end
 
-#desc "Build and deploy website"
-#task :gen_deploy => [:build, :deploy] do
-#end
+desc "Deploy from CI system"
+task :cideploy => :build do
+  sh "aws s3 rm s3://docs.freistilbox.com --recursive"
+  sh "aws s3 sync build s3://docs.freistilbox.com --region eu-west-1 --acl public-read --cache-control \"public, max-age=86400\""
+end

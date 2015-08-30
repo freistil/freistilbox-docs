@@ -10,4 +10,4 @@ deployment:
   aws:
     branch: master
     commands:
-      - bundle exec rake deploy
+      - bundle exec rake cideploy
