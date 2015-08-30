@@ -4,7 +4,7 @@ dependencies:
 
 test:
   override:
-  - bundle exec rake build
+  - bundle exec rake test
 
 deployment:
   aws:
