@@ -18,6 +18,6 @@ end
 
 desc "Deploy from CI system"
 task :cideploy => :build do
-  sh "aws s3 rm s3://docs.freistilbox.com --recursive"
+  sh "aws s3 rm s3://docs.freistilbox.com --region eu-west-1 --recursive"
   sh "aws s3 sync build s3://docs.freistilbox.com --region eu-west-1 --acl public-read --cache-control \"public, max-age=86400\""
 end
