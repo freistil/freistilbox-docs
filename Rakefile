@@ -24,5 +24,8 @@ end
 
 desc "Test documentation"
 task :test => :build do
-  puts "OK"
+  source_files = Rake::FileList["source/**/*.md"]
+  source_files.each do |md|
+    sh "awk -f md-rm-frontmatter.awk #{md} | mdl"
+  end
 end
