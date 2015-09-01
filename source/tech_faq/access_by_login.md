@@ -1,5 +1,5 @@
 ---
-title: How can I limit access to the website to authorized users?
+title: How can I restrict website access with a login?
 status: published
 zendesk-id: 201084425
 tags:
@@ -8,7 +8,7 @@ tags:
   - security
 ---
 
-# How to limit access to the website by IP address
+# How to restrict website access by authorisation
 
 Sometimes, for example during the pre-launch phase, you want to limit access to
 your website; unauthorized visitors shouldn't even get presented with a login
