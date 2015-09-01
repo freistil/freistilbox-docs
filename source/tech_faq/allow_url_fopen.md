@@ -5,7 +5,7 @@ tags:
   - security
 ---
 
-# Why we disabled allow_url_fopen
+# Why we disable allow\_url\_fopen
 
 With regards to security, we follow the "Shared Responsibility" principle: our
 operations team manages all parts of the hosting platform while our customers

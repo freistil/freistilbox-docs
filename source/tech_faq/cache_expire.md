@@ -7,6 +7,8 @@ tags:
   - htaccess
 ---
 
+# Possible causes of looong caching times
+
 You have updated some of your website's image or CSS files but even after hours or days, the Varnish cache still delivers outdated content.
 
 A common cause for this behaviour is a setting in Drupal's default `.htaccess` file:
