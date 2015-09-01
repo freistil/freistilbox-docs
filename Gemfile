@@ -24,13 +24,11 @@ gem 'neat'
 # Sync to S3
 gem 'middleman-s3_sync'
 
-group :development do
-  # Live-reloading plugin
-  gem "middleman-livereload", "~> 3.3.0"
-  # Markdown lint
-  gem "mdl"
-  # Guard
-  gem "guard"
-  gem "guard-shell"
-  gem "terminal-notifier-guard"
-end
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.3.0"
+# Markdown lint
+gem "mdl"
+# Guard
+gem "guard"
+gem "guard-shell"
+gem "terminal-notifier-guard"
