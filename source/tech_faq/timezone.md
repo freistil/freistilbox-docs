@@ -7,8 +7,10 @@ tags:
   - log
 ---
 
+# freistilbox runs in the UTC time zone
+
 There might be a difference between your local time and the clock on our
-servers. This is not a problem.
+servers. This is intentional.
 
 Not only are our customers distributed over different timezones, so is our team,
 too. So, regardless of which timezone we choose for running our server clocks,
