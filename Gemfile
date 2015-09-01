@@ -24,6 +24,9 @@ gem 'neat'
 # Sync to S3
 gem 'middleman-s3_sync'
 
+# Search engine sitemap
+gem 'middleman-search_engine_sitemap'
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.3.0"
 # Markdown lint

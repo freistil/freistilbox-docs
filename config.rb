@@ -91,6 +91,10 @@ activate :s3_sync do |s3_sync|
   s3_sync.version_bucket             = false
 end
 
+# Sitemap for search engines
+set :url_root, 'http://docs.freistilbox.com'
+activate :search_engine_sitemap
+
 helpers do
   def section_list(section)
     output = ""
