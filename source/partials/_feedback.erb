@@ -1,6 +1,7 @@
 <div id="feedback">
   <p>Have feedback on this article? Let
   <a href="http://www.twitter.com/intent/tweet?text=<%= CGI::escape("@freistilbox http://docs.freistilbox.com#{current_page.url}") %>" target="_blank">@freistilbox</a> know on Twitter.</p>
+  <p>Want to contribute improvements? <a href="https://github.com/freistil/freistilbox-docs/edit/master/source/<%= current_page.path.gsub(/.html$/, '.md') %>">Edit this article</a> on Github!</p>
   <p>Need help or found a bug? <%= support_link("Contact us") %>.</p>
 </div>
 
