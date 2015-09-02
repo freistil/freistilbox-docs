@@ -35,7 +35,7 @@ If you have more than one SSH key in use, you can configure SSH to use the right
 private key by adding the following block to your SSH configuration in
 `~/.ssh/config`:
 
-```bash
+```
 Host repo.freistilbox.net
      Hostname       repo.freistilbox.net
      IdentityFile   ~/.ssh/id_rsa.freistilbox
@@ -60,7 +60,7 @@ With the following command, you create a working copy of the application
 repository on your workstation (of course, you'll have to replace the instance
 details):
 
-```bash
+```shell
 git clone s123@repo.freistilbox.net:s123 site123
 ```
 

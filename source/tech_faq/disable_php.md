@@ -10,7 +10,7 @@ tags:
 If you want to disable code execution in subfolders of your web application, you
 can add the following lines to your `.htaccess` file:
 
-```
+```apache
 # Forbid access to PHP files in subfolders. 
 RewriteCond %{REQUEST_URI} ^.+/.*\.php$ 
 RewriteRule ^ index.php [F]

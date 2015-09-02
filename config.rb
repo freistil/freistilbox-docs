@@ -48,9 +48,7 @@ end
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # Build-specific configuration
@@ -72,8 +70,11 @@ configure :build do
 end
 
 # Use redcarpet as Markdown engine
-set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blocks: true, with_toc_data: true, smartypants: true
 set :markdown_engine, :redcarpet
+set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blocks: true, with_toc_data: true, smartypants: true
+
+# Use rouge for syntax highlighting
+activate :rouge_syntax
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'docs.freistilbox.com' # The name of the S3 bucket you are targetting. This is globally unique.

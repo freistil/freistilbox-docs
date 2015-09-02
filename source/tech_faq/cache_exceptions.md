@@ -19,7 +19,7 @@ For example, creating a file `/sites/default/files/nocache/.htaccess` with the
 following contents will disable caching for all content below the `nocache`
 path.
 
-```
+```apache
 <IfModule mod_headers.c>
 Header unset ETag
 Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"

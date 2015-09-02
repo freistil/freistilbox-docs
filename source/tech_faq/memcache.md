@@ -15,6 +15,8 @@ version.
 Configuration example for Drupal 7:
 
 ```php
+<?php
+...
 require_once('../config/drupal/settings-d7-memcache.php');  
 $conf['cache_backends'][] = 'sites/all/modules/contrib/memcache/memcache.inc';
 ```
@@ -22,6 +24,8 @@ $conf['cache_backends'][] = 'sites/all/modules/contrib/memcache/memcache.inc';
 Configuration example for Drupal 6:
 
 ```php
+<?php
+...
 require_once('../config/drupal/settings-d6-memcache.php');  
 $conf['cache_inc'] = './sites/all/modules/contrib/memcache/memcache.inc';
 ```

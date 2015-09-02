@@ -13,14 +13,14 @@ You have updated some of your website's image or CSS files but even after hours 
 
 A common cause for this behaviour is a setting in Drupal's default `.htaccess` file:
 
-```
+```apache
 # Cache all files for 2 weeks after access (A).
 ExpiresDefault A1209600
 ```
 
 You should probably lower this TTL ("Time To Live") setting to a more reasonable value, for example 4 hours (= 14,400 seconds):
 
-```
+```apache
 # Cache all files for 4 hours after access A).
 ExpiresDefault A14400
 ```

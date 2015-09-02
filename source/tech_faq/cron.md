@@ -10,7 +10,7 @@ You can run regular cron jobs on your freistilbox cluster's shell host. Log in v
 
 Log in to a site's SSH account:
 
-```bash
+```shell
 ssh s123@c23s.freistilbox.net
 ```
 
