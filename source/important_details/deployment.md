@@ -75,4 +75,4 @@ files like
     /docroot/.htaccess
     /docroot/.htpasswd
 
-[1]: https://freistil.zendesk.com/hc/en-us/articles/201084675
+[1]: /important_details/boxfile.html

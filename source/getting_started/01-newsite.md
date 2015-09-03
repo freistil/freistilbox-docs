@@ -46,6 +46,6 @@ public key is authorised.
 For more details, see "[Getting started with SSH security and configuration][3]",
 especially the section "Private and public key pairs for SSH".
 
-[1]: https://freistil.zendesk.com/hc/en-us/articles/201084725
-[2]: https://freistil.zendesk.com/hc/en-us/articles/201084695
+[1]: /getting_started/10-checkout.html
+[2]: /getting_started/40-shell.md
 [3]: http://www.ibm.com/developerworks/aix/library/au-sshsecurity/

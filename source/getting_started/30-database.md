@@ -37,5 +37,5 @@ If you'd like to view the contents of the configuration snippet, you can access
 the [login shell][1] of your site instance; you'll find the file in
 `current/config/drupal/`.
 
-[1]: https://freistil.zendesk.com/hc/en-us/articles/201084695
-[2]: https://freistil.zendesk.com/hc/en-us/articles/201084635
+[1]: /getting_started/40-shell.html
+[2]: /important_details/includes.html

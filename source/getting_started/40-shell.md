@@ -53,4 +53,4 @@ in the [Boxfile][1].
 Your private shared files (only available to your application) can be found in
 `current/private`.
 
-[1]: https://freistil.zendesk.com/hc/en-us/articles/201084675
+[1]: /important_details/boxfile.html
