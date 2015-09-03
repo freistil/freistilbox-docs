@@ -16,7 +16,7 @@ You can reach our Help Center team via several channels:
 
 * web: our [ticket system](http://support.freistilbox.com)
 * email: our ticket system address
-  [support@freistil.it](mailto:support@freistilbox.com)
+  [support@freistilbox.com](mailto:support@freistilbox.com)
 * phone: our support hotline [+49 761 458 955 99](tel://+4976145895599)
 
 Regardless of the channel you use to reach out to us, each (non-trivial) support
@@ -33,17 +33,16 @@ very quickly.
 
 ### Contact via web
 
-To manage your support requests in your web browser, simply visit our [Help
-Center website](http://freistil.zendesk.com). You can create your own user
+To manage your support requests in your web browser, simply visit our [ticket system](http://support.freistilbox.com). You can create your own user
 account there if you don't already have one. Then, just click the "New ticket"
 link to issue a new support request.
 
 ### Contact via email
 
 To send us your support request via email, write to
-[support@freistil.it](mailto:support@freistil.it). The Help Center website will
-automatically create a new ticket and notify you of the new ticket ID in an
-email response.
+[support@freistilbox.com](mailto:support@freistilbox.com). The Help Center
+website will automatically create a new ticket and notify you of the new ticket
+ID in an email response.
 
 By replying to an Help Center email, you can add comments to the ticket. Please
 do not remove the ticket ID from the email subject because the Help Center would
