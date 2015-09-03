@@ -14,10 +14,10 @@ Our Help Center team is there to help you with any question or problem you encou
 
 You can reach our Help Center team via several channels:
 
-* web: our [Help Center website](http://freistil.zendesk.com)
-* email: our Help Center address
-  [support@freistil.it](mailto:support@freistil.it)
-* phone: our Help Center hotline [+49 761 458 955 99](tel://+4976145895599)
+* web: our [ticket system](http://support.freistilbox.com)
+* email: our ticket system address
+  [support@freistil.it](mailto:support@freistilbox.com)
+* phone: our support hotline [+49 761 458 955 99](tel://+4976145895599)
 
 Regardless of the channel you use to reach out to us, each (non-trivial) support
 request will be documented in a dedicated support ticket. Each ticket has a
