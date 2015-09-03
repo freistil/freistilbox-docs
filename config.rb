@@ -98,13 +98,20 @@ activate :search_engine_sitemap
 
 helpers do
   def section_list(section)
-    output = ""
     parent = Regexp.new "#{section}"
+    articles = []
+
     sitemap.resources.each do |resource|
       next if resource.url !~ parent || resource.ext != '.html' || resource == current_resource
-      output << "<li><a href=\"#{resource.url}\">#{resource.data.title}</a></li>"
+      
+      articles << {
+                   res: resource,
+                   weight: resource.data.weight || 100
+                  }
     end
-    output
+    articles.sort{ |a,b| a[:weight] <=> b[:weight] }. \
+      map{ |a| "<li><a href=\"#{a[:res].url}\">#{a[:res].data.title}</a></li>"}. \
+      join("\n")
   end
 
   def related_pages(tags)

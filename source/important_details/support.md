@@ -1,6 +1,9 @@
 ---
 title: Technical support
 zendesk-id: 201084645
+tags:
+- support
+weight: 0
 ---
 
 # Technical support
