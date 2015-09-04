@@ -47,5 +47,5 @@ For more details, see "[Getting started with SSH security and configuration][3]"
 especially the section "Private and public key pairs for SSH".
 
 [1]: /getting_started/10-checkout.html
-[2]: /getting_started/40-shell.md
+[2]: /getting_started/40-shell.html
 [3]: http://www.ibm.com/developerworks/aix/library/au-sshsecurity/
