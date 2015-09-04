@@ -22,6 +22,7 @@
 }
 
 #content {
+  clear: both;
   ul {
     @extend %default-ul;
   }
@@ -51,4 +52,11 @@
   p {
     margin: 0;
   }
+}
+
+input.st-default-search-input {
+  width: 100%;
+  height: 2em;
+  float: right;
+  padding-left: 2em;
 }

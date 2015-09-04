@@ -7,12 +7,17 @@ header {
   @include omega();
 }
 
+#search {
+  @include span-columns(12 of 12);
+  @include omega();
+}
+
 #sidebar {
   @include span-columns(3 of 12);
 
 }
 
-#content {
+#main {
   @include span-columns(9 of 12);
   @include omega();
 }

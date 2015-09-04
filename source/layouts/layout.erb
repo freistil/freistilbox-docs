@@ -10,22 +10,26 @@
     <title><%= current_page.data.title || "freistilbox documentation" %></title>
 
     <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag "all" %>
   </head>
 
   <body class="<%= page_classes %>">
     <div id="container">
       <%= partial "partials/header" %>
+      <%= partial "partials/search" %>
       <%= partial "partials/sidebar" %>
-      <div id="content">
+      <div id="main">
         <%= partial "partials/breadcrumbs" %>
 
-        <%= yield %>
+        <div id="content">
+          <%= yield %>
+        </div>
 
         <%= partial "partials/related" %>
         <%= partial "partials/feedback" %>
       </div>
       <%= partial "partials/footer" %>
     </div>
+    <%= partial "partials/bottomjs" %>
   </body>
 </html>
