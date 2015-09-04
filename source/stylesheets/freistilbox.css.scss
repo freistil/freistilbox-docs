@@ -4,6 +4,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:100,300,normal,italic,bold,bolditalic);
 @import url(http://fonts.googleapis.com/css?family=Asap:100,300,normal,italic,bold,bolditalic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 
 // Colors
@@ -45,15 +46,16 @@ img {
 
 code {
   color: $code-color;
-  background-color: $code-background-color;
+  font-family: 'Source Code Pro', monospace;
+  //background-color: $code-background-color;
 }
 
 pre {
   overflow: auto;
   width: 500px;
   padding: 6px;
-  color: $code-color;
   background-color: $code-background-color;
+  color: $code-color;
   code {
     background: none;
   }
