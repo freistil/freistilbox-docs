@@ -54,9 +54,13 @@
   }
 }
 
-input.st-default-search-input {
-  width: 100%;
-  height: 2em;
+#search {
+  display: inline;
   float: right;
+}
+
+input.st-default-search-input {
+  width: 20em;
+  height: 2em;
   padding-left: 2em;
 }

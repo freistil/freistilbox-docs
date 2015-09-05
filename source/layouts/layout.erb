@@ -16,7 +16,9 @@
   <body class="<%= page_classes %>">
     <div id="container">
       <%= partial "partials/header" %>
-      <%= partial "partials/search" %>
+      <div id="toprow">
+        <%= partial "partials/search" %>
+      </div>
       <%= partial "partials/sidebar" %>
       <div id="main">
         <%= partial "partials/breadcrumbs" %>
