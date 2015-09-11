@@ -1,6 +1,7 @@
-# freistilbox Customer Documentation
+# freistilbox User Documentation
 
-This repository contains the freistilbox Customer Documentation as a
+This repository contains the [freistilbox User
+Documentation](http://docs.freistilbox.com) as a
 [Middleman](http://middlemanapp.com/ "Middleman: Hand-crafted frontend
 development") application. The documentation files themselves are in Markdown
 format.
