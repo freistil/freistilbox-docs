@@ -82,3 +82,16 @@ process to pull changes for a website instance from another branch than the
 default of "master", simply send us a [support request](/important_details/support.html)
 telling us the website ID and the branch you'd like us to activate.
 
+Set up your working repository like this to make deployment easy:
+
+```shell
+git remote add production <production repo URL> 
+git config branch.master.remote production
+git remote add testing <testing repo URL>
+git config branch.testing.remote testing
+```
+
+With these settings, a simple `git push` from the "master" branch will upload
+your changes to the production instance and a push from the "testing" branch
+will automatically go to the testing instance.
+
