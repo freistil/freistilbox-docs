@@ -4,9 +4,12 @@ status: published
 zendesk-id: 201088195
 ---
 
+# Using Drush
+
 ## Creating a site alias for drush
 
-Since you have access to a dedicated shell login host, using Drush for Drupal maintenance is easy.
+Since you have access to a dedicated shell login host, using Drush for Drupal
+maintenance is easy.
 
 Here is a minimal `aliases.drushrc.php`:
 
@@ -18,4 +21,5 @@ Here is a minimal `aliases.drushrc.php`:
       'remote-user' => 's123',
     );
 
-As always, replace the parts for site ID ("s123") and shell login host ("cXXs") with the actual values corresponding with your website instance.
+As always, replace the parts for site ID ("s123") and shell login host ("cXXs")
+with the actual values corresponding with your website instance.

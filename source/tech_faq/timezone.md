@@ -7,12 +7,26 @@ tags:
   - log
 ---
 
-There might be a difference between your local time and the clock on our servers. This is not a problem.
+# freistilbox runs in the UTC time zone
 
-Not only are our customers distributed over different timezones, so is our team, too. So, regardless of which timezone we choose for running our server clocks, it'll always be "wrong" for a number of people. 
+There might be a difference between your local time and the clock on our
+servers. This is intentional.
 
-Running servers on different timezones would not only make things more confusing, it would even make it impossible for us to easily correlate log entries when we have to diagnose errors or other events between servers in our distributed IT architecture.
+Not only are our customers distributed over different timezones, so is our team,
+too. So, regardless of which timezone we choose for running our server clocks,
+it'll always be "wrong" for a number of people.
 
-That's why we run the clocks of all of our servers in the neutral timezone UTC ([Coordinated Universal Time](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)). Since UTC is the primary standard by which the world regulates clocks and time, it's the most simple way of dealing with timezone differences. Everyone only needs to know their local offset to UTC.
+Running servers on different timezones would not only make things more
+confusing, it would even make it impossible for us to easily correlate log
+entries when we have to diagnose errors or other events between servers in our
+distributed IT architecture.
 
-Furthermore, the fact that UTC doesn't have the incontinuities caused by daylight saving time (where in spring, one hour is lost, and in fall, one hour even gets repeated), makes UTC the ideal choice for running server clocks.
+That's why we run the clocks of all of our servers in the neutral timezone UTC
+([Coordinated Universal Time](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)).
+Since UTC is the primary standard by which the world regulates clocks and time,
+it's the most simple way of dealing with timezone differences. Everyone only
+needs to know their local offset to UTC.
+
+Furthermore, the fact that UTC doesn't have the incontinuities caused by
+daylight saving time (where in spring, one hour is lost, and in fall, one hour
+even gets repeated), makes UTC the ideal choice for running server clocks.

@@ -48,18 +48,16 @@ end
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
@@ -72,8 +70,11 @@ configure :build do
 end
 
 # Use redcarpet as Markdown engine
-set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blocks: true, with_toc_data: true, smartypants: true
 set :markdown_engine, :redcarpet
+set :markdown, tables: true, autolink: true, gh_blockcode: true, fenced_code_blocks: true, with_toc_data: true, smartypants: true
+
+# Use rouge for syntax highlighting
+activate :rouge_syntax
 
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'docs.freistilbox.com' # The name of the S3 bucket you are targetting. This is globally unique.
@@ -91,15 +92,26 @@ activate :s3_sync do |s3_sync|
   s3_sync.version_bucket             = false
 end
 
+# Sitemap for search engines
+set :url_root, 'http://docs.freistilbox.com'
+activate :search_engine_sitemap
+
 helpers do
   def section_list(section)
-    output = ""
     parent = Regexp.new "#{section}"
+    articles = []
+
     sitemap.resources.each do |resource|
       next if resource.url !~ parent || resource.ext != '.html' || resource == current_resource
-      output << "<li><a href=\"#{resource.url}\">#{resource.data.title}</a></li>"
+      
+      articles << {
+                   res: resource,
+                   weight: resource.data.weight || 100
+                  }
     end
-    output
+    articles.sort{ |a,b| a[:weight] <=> b[:weight] }. \
+      map{ |a| "<li><a href=\"#{a[:res].url}\">#{a[:res].data.title}</a></li>"}. \
+      join("\n")
   end
 
   def related_pages(tags)
@@ -111,5 +123,9 @@ helpers do
     end
 
     pages - [current_page]
+  end
+
+  def support_link(text)
+    link_to text, "/important_details/support.html"
   end
 end

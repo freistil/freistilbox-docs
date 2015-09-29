@@ -8,6 +8,7 @@
 @import "partials/layout";
 @import "partials/header";
 @import "partials/footer";
+@import "partials/highlight";
 
 #sidebar {
   nav {
@@ -21,6 +22,7 @@
 }
 
 #content {
+  clear: both;
   ul {
     @extend %default-ul;
   }
@@ -31,7 +33,6 @@
 
 #related {
   margin-top: 2em;
-  background-color: #eee;
   border: 1px solid #aaa;
   padding: 1em;
 }
@@ -39,4 +40,27 @@
 #breadcrumbs {
   padding: 0.5em 0 0.5em 0;
   font-size: 80%;
+}
+
+#feedback {
+  margin-top: 1em;
+  background-color: #eee;
+  padding: 5px;
+  font-size: 80%;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+#search {
+  display: inline;
+  float: right;
+}
+
+input.st-default-search-input {
+  width: 20em;
+  height: 2em;
+  padding-left: 2em;
 }

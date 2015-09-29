@@ -7,7 +7,11 @@ tags:
   - ssh
 ---
 
-If you have more than one SSH key in use, you can configure SSH to use the right private key by adding the following block to your SSH configuration in `~/.ssh/config`:
+# How to use a separate SSH key for Git
+
+If you have more than one SSH key in use, you can configure SSH to use the right
+private key by adding the following block to your SSH configuration in
+`~/.ssh/config`:
 
 ```
 Host repo.freistilbox.net
@@ -16,5 +20,6 @@ Host repo.freistilbox.net
      IdentitiesOnly yes
 ```
 
-Simply replace the entry after `IdentityFile` with the actual path to your private key file.
+Simply replace the entry after `IdentityFile` with the actual path to your
+private key file.
 
