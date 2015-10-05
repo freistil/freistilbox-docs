@@ -2,7 +2,7 @@
 title: What are Processing Units?
 ---
 
-# freistilbox Processing Units
+# "What are Processing Units?"
 
 Even a web application that's tuned for optimum delivery performance has a limit
 for the number of concurrent requests it can handle running on freistilbox. This
@@ -13,13 +13,15 @@ hardware specifications like conventional hosting providers doesn't make any
 sense with freistilbox. Instead, we chose PU as the main performance metric
 distinguishing our managed hosting plans.
 
-## "We get errors because all PU are busy!"
+## PU overload
 
-When HTTP requests are coming in through the Content Cache faster than your
-freistilbox setup can handle them, this will eventually result in all the
-Processing Units of your freistilbox cluster being busy. Instead of responding
-with the requested content, freistilbox will then deliver a "Request Delivery
-Failed" error.
+Each incoming HTTP request is assigned to a free Processing Unit of one of our
+application boxes. This PU will respond with the requested content and will then
+be freed up for the next request. But if HTTP requests are coming in through the
+Content Cache faster than your freistilbox setup can handle them, this can
+eventually result in all the Processing Units of your freistilbox cluster being
+busy. When there is no free worker process left to handle new requests,
+freistilbox will deliver a "Request Delivery Failed" error.
 
 This happens when a) requests are coming in too fast, or b) your application
 responds too slow, or c) both. Let's take a look at each of these scenarios.
