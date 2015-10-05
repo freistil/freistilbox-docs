@@ -84,7 +84,7 @@ determine where your application spends its processing time. If you experience
 unexpectedly high response times, use these tools to detect bottle necks and 
 tuning opportunities.
 
-## Can you help me finding performance bottlenecks?
+## "Can you help me find performance bottlenecks?"
 
 Yes, we'd be happy to! Simply send us a [support
 request](http://docs.freistilbox.com/important_details/support.html) describing
