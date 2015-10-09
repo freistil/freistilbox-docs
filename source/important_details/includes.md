@@ -19,15 +19,16 @@ configuration like this:
 require_once('../config/$CMS/$CONF');
 ```
 
-<span class="label warning">WARNING</span> If you put the includes
-at the beginning of your configuration file, their settings can be
-overridden by configuration changes coming further below. This can be a
-useful or a confusing feature, depending on your approach. We recommend
-appending the `require_once` at the end of your configuration file.
+<span class="label warning">WARNING</span> If you put the includes at the
+beginning of your configuration file, their settings can be overridden by
+configuration changes coming further below. This can either be useful or
+confusing, depending on your approach. We recommend appending the `require_once`
+at the end of your configuration file.
 
 ## Drupal configuration snippets
 
-Drupal-specific configuration snippets are stored in `../config/drupal`. 
+Drupal-specific configuration snippets are stored in the directory
+`../config/drupal/`. 
 
 Example: `settings.php` for a Drupal 8 site
 
@@ -41,12 +42,12 @@ require_once('../config/drupal/settings-d8-db123.php');
 
 The following configuration files are available:
 
-* `settings-d8-site.php` -- General website settings, for example Reverse Proxy
+* `settings-<version>-site.php` -- General website settings, for example Reverse Proxy
   settings.
-* `settings-d8-dbXXX.php` -- Database configuration. Replace "dbXXX" with the
+* `settings-<version>-dbXXX.php` -- Database configuration. Replace "dbXXX" with the
   database name of your site instance. 
-* `settings-d8-memcache.php` -- Memcache configuration.
+* `settings-<version>-memcache.php` -- Memcache configuration.
   See "[How do I enable memcached?](/tech_faq/memcache.html)".
 
-For other Drupal versions, simply replace "d8" accordingly. freistilbox supports
-Drupal 6 through 8.
+Simply replace `<version>` with a Drupal version shortcut. freistilbox supports
+the shortcuts "d6", "d7" and "d8".
