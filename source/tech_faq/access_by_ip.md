@@ -11,7 +11,7 @@ If you want to limit access to your website instance to a small number of IP
 addresses, for example before the official launch, you'd usually use the
 following lines in your `.htaccess` file (with Apache 2.2):
 
-```apache
+```
 Order allow,deny
 Deny from All
 Allow from 1.2.3.4
@@ -20,7 +20,7 @@ Allow from 2.3.4.5
 
 Here's the equivalent configuration for Apache 2.4:
 
-```apache
+```
 <RequireAny>
   Require ip 1.2.3.4 2.3.4.5
 </RequireAny>
@@ -35,7 +35,7 @@ which is set by our Edge Routers. By evaluating this header, Apache can take
 this information into account. Here's a complete configuration snippet that
 works with both Apache 2.4 and Apache 2.2:
 
-```apache
+```
 SetEnvIf X-Forwarded-For "1.2.3.4" AllowIP
 SetEnvIf X-Forwarded-For "2.3.4.5" AllowIP
 <IfModule mod_authz_core.c>
