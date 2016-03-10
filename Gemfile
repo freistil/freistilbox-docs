@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem "middleman", "~> 3.4.1"
 
 # Sync to S3
-gem 'middleman-s3_sync'
+gem 'middleman-s3_sync', '~> 3.3', '>= 3.3.9'
 
 # Search engine sitemap
 gem 'middleman-search_engine_sitemap'
