@@ -1,25 +1,7 @@
-# If you do not have OpenSSL installed, update
-# the following line to use "http://" instead
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.3.12"
-
-# Syntax highlighting
-gem "middleman-rouge"
-
-# For faster file watcher updates on Windows:
-gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
-
-# Windows does not come with time zone data
-gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
-
-# Markdown engine
-gem "redcarpet"
-
-# Styling libraries
-gem 'bitters'
-gem 'bourbon'
-gem 'neat'
+# Middleman core
+gem "middleman", "~> 3.4.1"
 
 # Sync to S3
 gem 'middleman-s3_sync'
@@ -28,9 +10,22 @@ gem 'middleman-s3_sync'
 gem 'middleman-search_engine_sitemap'
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.3.0"
+gem "middleman-livereload", "~> 3.4", ">= 3.4.6"
+
+# Syntax highlighting
+gem "middleman-rouge"
+
+# Markdown engine
+gem "redcarpet"
+
+# Styling libraries
+gem 'bitters', '~> 1.2'
+gem 'bourbon', '~> 4.2', '>= 4.2.6'
+gem 'neat', '~> 1.7', '>= 1.7.4'
+
 # Markdown lint
 gem "mdl"
+
 # Guard
 gem "guard"
 gem "guard-shell"
