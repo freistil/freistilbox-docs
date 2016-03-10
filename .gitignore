@@ -19,6 +19,7 @@
 
 # Ignore temporary files
 /tmp
+/.powder
 
 # Ignore S3 credentials file
 .s3_sync
