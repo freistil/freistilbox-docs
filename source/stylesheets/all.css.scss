@@ -16,6 +16,10 @@
       font-size: 0.8em;
       font-weight: 700;
       text-transform: uppercase;
+
+      li {
+        margin-bottom: 0.5em;
+      }
     }
   }
 }
@@ -37,7 +41,7 @@
 }
 
 #breadcrumbs {
-  padding: 0.5em 0 0.5em 0;
+  margin: 0.5em 0;
   font-size: 80%;
 }
 
@@ -79,13 +83,10 @@ h2, h3, h4, h5 {
 
 h1 {
   font-size: 200%;
-  color: $forest-green-dark;
-  border-bottom: 2px solid $forest-green-dark;
 }
 
 h2 {
   font-size: 150%;
-  color: $forest-green-dark;
 }
 
 h3 {

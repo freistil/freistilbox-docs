@@ -1,16 +1,17 @@
 header {
+  margin: 2em 0;
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(flex-end);
 
-  background-color: $forest-green-dark;
-  margin-bottom: 1em;
-  padding: 1em;
-
-  h1 {
-    color: white;
-    text-align: center;
-    font-size: 36pt;
+  .title {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
     margin: 0;
   }
 
+  .st-default-search-input {
+    margin: 0;
+  }
 }
-
-

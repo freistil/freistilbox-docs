@@ -1,8 +1,8 @@
 ---
-title: Home 
+title: freistilbox Documentation
 ---
 
-# freistilbox: Next-generation managed hosting
+# freistilbox User Documentation
 
 Welcome to freistilbox, the leading Enterprise Hosting Platform for Drupal and
 Wordpress in Europe. Launching your website in our fast and reliable hosting
