@@ -31,9 +31,29 @@ hand, are stored separately; we'll cover that later.
 If you're not already familiar with Git, we recommend you get acquainted by
 reading the [Git Tutorial](http://git-scm.com/docs/gittutorial).
 
+<span class="label notice">NOTICE</span> This tutorial assumes you have a basic familiarity
+with working in a terminal; all examples here will be for a command-line shell.
+You can use other tools with a GUI, of course. Since we can't cover all possible
+alternatives, you'll have to adapt the process described here to your tools of
+choice.
+
 ## Create the Git repository
 
-<!-- TODO: Write section -->
+Clone your website's repository to your machine:
+
+```shell
+git clone s007@repo.freistilbox.net:s007 mywebsite
+```
+
+In this command, "s007" is the site ID of your website instance. It is used in
+two places: first, as the user name (in front of the "at" sign) and second, as
+the repository name (after the colon).
+
+<span class="label important">IMPORTANT</span> Git uses SSH to access the
+freistilbox repository, so this command will only work after you've added your
+SSH public key to your website configuration. If you want to use a special SSH
+key that's separate from your usual key, please see the FAQ
+"[How can I use a separate SSH key for Git?](/tech_faq/git_ssh_key.html)".
 
 ## Add your application code
 
