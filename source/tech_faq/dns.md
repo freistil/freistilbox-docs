@@ -3,7 +3,7 @@ title: "How do I set DNS for my website?"
 tags: [ dns ]
 ---
 
-# How do I set up DNS for my website?
+# How to set up DNS for your website
 
 For your website to respond to its official domain name, the domain's DNS
 records have to point to freistilbox. If your domain is managed by us, you can
