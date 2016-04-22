@@ -1,7 +1,7 @@
 ---
 title: "Getting started with freistilbox: Platform services"
 weight: 3
-tags: [ ]
+tags: [ service database ]
 ---
 
 # Platform services
@@ -14,9 +14,6 @@ pre-populated configuration snippets that you can simply include in your
 application configuration. That way, you don't need to configure the database
 credentials manually and changes are applied automatically.
 
-You'll get the name of the configuration snippet with the details of each new
-site instance.
-
 ### Drupal
 
 In order to include the database configuration snippet, you just need to append
@@ -26,21 +23,23 @@ a single line to your `settings.production.php`:
 require_once('../config/drupal/settings-d7-dbXXX.php');
 ```
 
-Obviously, you need to replace "dbXXX" with the database ID of the site
-instance. If your application uses a different Drupal version, replace "d7" with
-the appropriate alternative.
+Obviously, you need to replace "dbXXX" with the actual database ID you'll find
+in your website details. If your application uses a different Drupal version,
+replace "d7" with the appropriate alternative (e.g. "d8" for Drupal 8).
 
 <span class="label warning">WARNING</span> Make sure to add this line at the end
-of your `settings.php` so the snippet settings can override conflicting settings
+of your `settings.php` so the include file can override conflicting settings
 that may be defined elsewhere.
 
 If you'd like to view the contents of the configuration snippet, you can access
 the [login shell][1] of your site instance; you'll find the file in
-`current/config/drupal/`.
+`~/current/config/drupal/`.
 
 ### WordPress
 
-<!-- TODO: Write section -->
+We don't provide configuration snippets for WordPress yet. Please [contact our
+support team](/important_details/support.html) for help configuring your
+WordPress application.
 
 ## Shared storage
 
@@ -63,29 +62,31 @@ shared_folders:
   - docroot/sites/default/files
 ```
 
-As you can tell from the path `sites/default/files`, this is obviously the
-`Boxfile` of a Drupal installation. With this configuration, the deployment
-process will set up your application's file system in such a way that
-everything under `sites/default/files` will reside on the shared file storage.
+As you can tell from the path `sites/default/files`, this is the `Boxfile` of a
+Drupal installation. With this configuration, the deployment process will set up
+your application's file system in such a way that everything under
+`sites/default/files` will reside on the shared file storage.
 
-You might already have guessed how the `shared_folders` section for a WordPress
-application should look like:
+Armed with this knowledge, you should be able to guess how the `shared_folders`
+section for a WordPress application should look like:
 
 ```yaml
 shared_folders:
   - docroot/wp-content/uploads
 ```
 
+The shared folders you declare in the `Boxfile` are created automatically by our
+deployment process.
+
 <span class="label important">IMPORTANT</span> In order for the merging of local
 application code with shared file storage to work, it's important that your
-application repository __does not contain__ the shared folders. You can prevent
-them from being added by accident by adding them to your repository's
-`.gitignore` file.
+application repository __does not contain__ the shared folders themselves. You
+can prevent them from being added by accident by adding them to your
+repository's `.gitignore` file.
 
 <!-- TODO: Elaborate on .gitignore -->
 
 ---
 
-_Next:_ [deployment](deployment.html)
-
-
+_Next:_ We've already mentioned our [deployment process](deployment.html). Let's
+take a closer look how it works!

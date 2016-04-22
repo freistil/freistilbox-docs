@@ -1,16 +1,21 @@
 ---
-title: "Getting started with freistilbox: Website instance"
+title: "Getting started with freistilbox: Your first freistilbox application"
 weight: 2
 tags: [ dashboard ]
 ---
 
 # Your first freistilbox application
 
-## Add a website to your freistilbox cluster
+## How to add a website to your freistilbox cluster
 
-<!-- TODO: Write section -->
+In the [freistilbox Dashboard](/dashboard/), go to the cluster on which you'd
+like to add your website and click "Create new website".
 
-## SSH access
+![](/images/dashboard_create_website.png)
+
+<!-- TODO: Complete section -->
+
+## How to authorize your SSH keys
 
 For accessing freistilbox, you'll need an SSH key. SSH, "Secure Shell", is a
 suite of tools that use an encrypted network protocol for transferring data. 
@@ -32,9 +37,6 @@ you on your freistilbox website instance. Your private SSH key then is the key
 to this lock, so you must keep that one stored securely on your work station
 only. Accounts with your public key can only be accessed from computers where
 your private key is installed.
-
-<span class="label important">IMPORTANT</span> Never share your private SSH key
-with anyone!
 
 As an additional security measure, you should strengthen your private key with a
 passphrase that only you can guess. So even if someone got hold of your private
@@ -69,18 +71,42 @@ The key's randomart image is:
 +-----------------+
 ```
 
-For creating an SSH key pair in PuTTY, please refer to the application
-manual.
+(For creating an SSH key pair in Windows applications like PuTTY, please refer
+to the application manual.)
 
-Now you can send us your public SSH key (the one named `id_rsa.pub`) in a
-[support request](/important_details/support.html). You can either attach the
-file to your message or, and that's the preferred way, simply copy its content
-right into your message. It'll look like this:
+This procedure will create two files, your private key named `id\_rsa` and your
+public key named `id\_rsa.pub`. On Linux and Mac OS, you will find them in the
+hidden subdirectory `.ssh` under your home directory.
+
+To gain access to freistilbox, you only need to provide us with your _public_
+key. Its contents should look like this:
 
 ```
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQk1gnrZLCoJzU9OYLRl4pbwR1GNkZ3B9O5SkFphyuu3m04O2vRawjr6GLdMwzQd5NPLaIHP9+yHJdGxtHNGEGoocnw3dA2y3C0n0F/yU8ckUueKoZyxFrdEqXDT8w/ndJNGmoa0ST9rdYBMVY6EeCJPVj+xt4s7SwaxdpPybEEmJ2QTzqNKISXi3YJDa6np6i5uIl+CcpwwFLzQXzpAwuGe1xzbIbInrHgK9pWLL1lpX3fbApqRucwIhXT2LsCNZLovGSDd/fIF/pvaowqWBsyZgWN/bOtLbnqKWA9ur2JF8PUlqFWFB/YbbWJ6c5YF/QvL4OMp3AT4ZZwfhoKwZr email@example.com
 ```
 
+<span class="label important">IMPORTANT</span> Never share your _private_ SSH key
+with anyone!
+
+Add your public key to your website by clicking "Add key" in the "SSH keys"
+section:
+
+![](/images/dashboard_add_ssh_key.png)
+
+Then copy the contents of the public key file into the text field and submit the
+form. You can even paste multiple keys into the text field (one key per row) to
+add several keys in one action.
+
+## How to add a database
+
+In order to add a database to your web application, simply click "Add database"
+in the "Databases" section.
+
+![](/images/dashboard_add_database.png)
+
+<!-- TODO -->
+
 ---
 
-_Next:_ [services](services.html)
+_Next:_ Let's set up the [services](services.html) your web application is
+going to need!
