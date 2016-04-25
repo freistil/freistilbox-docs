@@ -20,13 +20,17 @@ gem "middleman-rouge"
 # Markdown engine
 gem "redcarpet"
 
+# Rake
+gem 'rake'
+
 # Styling libraries
 gem 'bitters', '~> 1.2'
 gem 'bourbon', '~> 4.2', '>= 4.2.6'
 gem 'neat', '~> 1.7', '>= 1.7.4'
 
-# Markdown lint
-gem "mdl"
+# Integration tests
+gem 'rspec', '~> 3.4'
+gem 'capybara', '~> 2.4.4'
 
 # Guard
 gem "guard"

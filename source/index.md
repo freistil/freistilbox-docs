@@ -12,7 +12,7 @@ you need to know.
 If you're new to freistilbox, get started with our
 [tutorial](/getting_started/index.html).
 
-And if you've got any questions that you don't find answered here, just
-[contact our technical support](/important_details/support.html) and we'll get
-it sorted out!
+And if you've got any questions that you don't find answered here, just contact
+our [technical support](/important_details/support.html) and we'll get it sorted
+out!
 
