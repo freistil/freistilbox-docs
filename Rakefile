@@ -1,3 +1,5 @@
+require 'rspec/core/rake_task'
+
 task :default => :build
 
 desc "Build the website from source"
@@ -11,6 +13,11 @@ task :preview do
   sh "bundle exec middleman server"
 end
 
+RSpec::Core::RakeTask.new(:spec)
+
+desc "Run integration tests"
+task :test => :spec
+
 desc "Deploy website to S3"
 task :deploy => :build do
   sh "bundle exec middleman s3_sync"
@@ -20,12 +27,4 @@ desc "Deploy from CI system"
 task :cideploy => :build do
   sh "aws s3 rm s3://docs.freistilbox.com --region eu-west-1 --recursive"
   sh "aws s3 sync build s3://docs.freistilbox.com --region eu-west-1 --acl public-read --cache-control \"public, max-age=86400\""
-end
-
-desc "Test documentation"
-task :test do
-  source_files = Rake::FileList["source/**/*.md"]
-  source_files.each do |md|
-    sh "awk -f md-rm-frontmatter.awk #{md} | mdl -s relaxed"
-  end
 end
