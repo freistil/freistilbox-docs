@@ -40,6 +40,7 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
+    diff-lcs (1.2.5)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -92,10 +93,6 @@ GEM
       rb-inotify (>= 0.9.7)
     lumberjack (1.0.10)
     map (6.6.0)
-    mdl (0.2.1)
-      kramdown (~> 1.5, >= 1.5.0)
-      mixlib-cli (~> 1.5, >= 1.5.0)
-      mixlib-config (~> 2.1, >= 2.1.0)
     method_source (0.8.2)
     middleman (3.4.1)
       coffee-script (~> 2.2)
@@ -150,8 +147,6 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    mixlib-cli (1.5.0)
-    mixlib-config (2.2.1)
     multi_json (1.11.2)
     neat (1.7.4)
       bourbon (>= 4.0)
@@ -178,11 +173,25 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.5.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     redcarpet (3.3.4)
     rouge (1.10.1)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.1)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     ruby-progressbar (1.7.5)
     sass (3.4.21)
     shellany (0.0.1)
@@ -219,16 +228,18 @@ PLATFORMS
 DEPENDENCIES
   bitters (~> 1.2)
   bourbon (~> 4.2, >= 4.2.6)
+  capybara (~> 2.4.4)
   guard
   guard-shell
-  mdl
   middleman (~> 3.4.1)
   middleman-livereload (~> 3.4, >= 3.4.6)
   middleman-rouge
   middleman-s3_sync (~> 3.3, >= 3.3.9)
   middleman-search_engine_sitemap
   neat (~> 1.7, >= 1.7.4)
+  rake
   redcarpet
+  rspec (~> 3.4)
   terminal-notifier-guard
 
 BUNDLED WITH
