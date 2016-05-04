@@ -41,8 +41,4 @@ record to all domain names you intend to use for the website.
 
 Our ops engineers will happily take care of registering and operating your DNS
 for you. We recommend this approach because there are many aspects to running
-DNS properly. For example, we’ll make sure that each domain has an SPF records
-that authorises your freistilbox servers to use the domain when sending email.
-If a domain is managed by us, we can also reduce TTL values temporarily in
-advance of important DNS changes to speed up their propagation all over the
-internet.
+DNS properly.
