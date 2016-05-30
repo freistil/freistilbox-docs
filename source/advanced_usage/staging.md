@@ -50,7 +50,7 @@ exist in a different version for each staging instance. That way, you can have a
 automatically use the first one in the "production" instance and the second one
 in the "testing" instance.
 
-Please see the [Boxfile documentation]((/important_details/boxfile.html)) for
+Please see the [Boxfile documentation](/important_details/boxfile.html) for
 details.
 
 All you need to do in advance is assign the right label to each of your staging

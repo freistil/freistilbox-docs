@@ -6,7 +6,7 @@ title: How do the changes in Drupal 8 affect freistilbox?
 
 Drupal 7 to Drupal 8 is a huge change and it'll be great to see what our
 customers get to build on the long list of improvements that came with the new
-release. Hotsing Drupal 8 on freistilbox is straightforward. Only a few changes
+release. Hosting Drupal 8 on freistilbox is straightforward. Only a few changes
 in the new version affect the hosting layer and in this article, we cover all
 you need to know.
 
