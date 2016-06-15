@@ -44,7 +44,7 @@ performance reasons).
 That's why you need to tell freistilbox which directories in your application
 file tree should be shared between boxes. With Drupal as an example, you'd
 declare `sites/default/files` as shared. You do this in your application's
-[Boxfile](../boxfile/).
+[Boxfile](/important_details/boxfile.html).
 
 For storage of asset files that need to be protected from direct access by HTTP
 clients, freistilbox provides the directory `../private`, relative to your
