@@ -31,6 +31,16 @@ Git repository along with your application code. The right location for these
 files is the private section in the shared file storage where your boxes alone
 can read and update them.
 
+### Drupal 8.1.x
+
+```php
+$config_directories['sync'] = '../private/config/sync';
+```
+
+
+
+### Drupal 8.0.x
+
 ```php
 $config_directories['active'] = '../private/config/active';
 $config_directories['staging'] = '../private/config/staging';
