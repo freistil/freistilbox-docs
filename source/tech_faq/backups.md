@@ -6,13 +6,19 @@ tags:
 
 # Backups
 
-Every 24h, freistilbox makes backups of your website data:
+Every 24h, freistilbox makes backups of all your website data:
 
 * Git repository
 * Database
 * Asset files
 
 We hold on to backups for a minimum of 5 days.
+
+<span class="label notice">NOTICE</span> We recommend creating additional
+backups of your application data and storing them offsite, i.e. outside of the
+freistilbox platform, so you have a last resort in the catastrophic event
+freistilbox becomes unavailable completely.
+
 
 ## Git repository
 
